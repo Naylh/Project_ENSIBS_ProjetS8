@@ -1,7 +1,7 @@
 # Projet S8
 ## Authors
-CHAPRON Lucas - chapron.e2105151@etud.univ-ubs.fr  
-MARCHAND Robin - marchand.e2101234@etud.univ-ubs.fr  
+CHAPRON Lucas - chapron.e2105151@etud.univ-ubs.fr    
+MARCHAND Robin - marchand.e2101234@etud.univ-ubs.fr    
 
 ## Réalisation
 WEB - CHAPRON Lucas
