@@ -8,7 +8,7 @@ WEB - CHAPRON Lucas
 Programme Obfuscation/Désobfuscation - MARCHAND Robin
 
 ## Description du projet
-Ce projet vient du problème que tout le monde peut voir un pdf ou une image en entier une fois mis en ligne et qu'il n'y a plus de contrôle d'accès. Nous avons rendu possible l'accès de certaines informations selon les rôles afin que seul un groupe de personnes ait accès à l'information. Pour mettre cela en place, nous avons dû utiliser nos compétences en cryptographie, stéganographie et web. Pour utiliser cet outil nous avons mis en place une interface web mais l'outil est tout à fait utilisable en ligne de commande même si ceci est très peu intuitif et il vous faut récupérer les coordonnées des mots que vous voudriez cacher.
+Ce projet vient du problème que tout le monde peut voir un pdf ou une image en entier une fois mis en ligne et qu'il n'y a plus de contrôle d'accès. Nous avons rendu possible l'accès de certaines informations selon les rôles afin que seul un groupe de personnes ait accès à l'information. Pour mettre cela en place, nous avons dû utiliser nos compétences en stéganographie et web. Pour utiliser cet outil nous avons mis en place une interface web mais l'outil est tout à fait utilisable en ligne de commande même si ceci est très peu intuitif et il vous faut récupérer les coordonnées des mots que vous voudriez cacher.
 
 ## Contenu du dossier
 ### docker-compose.yml
