@@ -1,0 +1,34 @@
+/* Styles pour la navigation */
+#nav {
+    position: fixed; /* Coller la div nav en haut à gauche */
+    top: 0;
+    left: 0;
+    background-color: black; /* Couleur de fond noir */
+    width: 100%; /* Largeur de 100% de la fenêtre du navigateur */
+    display: flex; /* Afficher les éléments en ligne */
+    align-items: center; /* Centrer verticalement les éléments */
+    font-size: 0.7em; /* Taille de police */
+    color: white; /* Couleur de police blanche */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#nav h1 a:hover {
+    background-color: #1f1e1e;
+    cursor: pointer;
+  }
+
+/* Styles pour les liens */
+#desobfuscation_header, #obfuscation_header {
+    text-decoration: none; /* Supprimer la soulignement de lien */
+    display: inline-block; /* Afficher les éléments côte à côte */
+    margin-left: 10%;
+}
+
+#obfuscation_header {
+    text-decoration: none; /* Supprimer la soulignement de lien */
+    display: inline-block; /* Afficher les éléments côte à côte */
+    margin-left: 25%;
+}

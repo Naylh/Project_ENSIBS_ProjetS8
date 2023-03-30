@@ -1,0 +1,89 @@
+#headerDiv{
+    position : fixed;
+    top: 0;
+    width: 100%;
+}
+
+#import_file_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+
+.delete-role, .delete-word {
+    user-select: none;
+    cursor: pointer;
+}
+
+#roles_div, #download_file_div, #image_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#words_div{
+    display: none;
+}
+
+#roles_list_div, #words_list_div{
+    padding: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#role-list, #word-list {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-height: 10%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#role-list li, #word-list li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#role-list li:last-child, #word-list li:last-child {
+    border-bottom: none;
+}
+  
+#role-list li:before, #word-list li:before {
+    content: none;
+}
+  
+#role-list li:hover, #word-list li:hover {
+    background-color: #f5f5f5;
+}
+  
+#role-list li:not(:last-child), #word-list li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#image_div{
+    max-width: 100%;
+    height: auto;
+}
+
+#image {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    user-select: none;
+  }
+
+#footerDiv {
+    display: none;
+    position : relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

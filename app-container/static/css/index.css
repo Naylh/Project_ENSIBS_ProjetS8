@@ -1,0 +1,38 @@
+#headerDiv{
+    position : fixed;
+    top: 0;
+    width: 100%;
+}
+
+#import_file_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+#passphrase_file_div, #download_file_div, #image_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#image_div{
+    max-width: 100%;
+    height: auto;
+}
+
+#image {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+#footerDiv {
+    display: none;
+    position : fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
