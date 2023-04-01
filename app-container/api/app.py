@@ -6,7 +6,7 @@ __license__             = "ENSIBS - Cyberlog4"
 __copyright__           = "Copyright 2023, S8 Project"
 __referent_professor__  = "M. Salah SADOU"
 __client__              = "M. Maykel MATTAR"
-__credits__             = ["CHAPRON Lucas", "MARCHAND Robin"]
+__credits__             = ["CHAPRON Lucas", "COUTAND Bastien", "MARCHAND Robin"]
 
 #-----------------------------------#
 #                                   #
@@ -92,10 +92,10 @@ async def redirect(request: Request, path: str):
     Returns:
         RedirectResponse: redirect to the index or to the obfuscation page
     """
-    if os.listdir("download"):
+    if os.path.exists("download"):
         for file in os.listdir("download"):
             os.remove(f'download/{file}')
-    if os.listdir("upload"):
+    if os.path.exists("upload"):
         for file in os.listdir("upload"):
             os.remove(f'upload/{file}')
     dict_words_with_roles.clear()
@@ -230,8 +230,6 @@ async def create_upload_file_obfuscation(input_file: UploadFile = File(...)):
     # clear all the variables
     dict_words_with_roles.clear()
     list_roles.clear()
-    print(dict_words_with_roles)
-    print(list_roles)
     if input_file == None:
         raise HTTPException(status_code = 400, detail = "Fichier non fourni, uploadez un fichier")
     if input_file.content_type != "image/png" and input_file.content_type != "image/jpeg" and input_file.content_type != "image/jpg" and input_file.content_type != "application/pdf":
