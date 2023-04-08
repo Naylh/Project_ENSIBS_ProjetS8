@@ -1,11 +1,12 @@
 # Projet S8
 ## Authors
-CHAPRON Lucas - chapron.e2105151@etud.univ-ubs.fr    
-MARCHAND Robin - marchand.e2101234@etud.univ-ubs.fr    
+CHAPRON Lucas - chapron.e2105151@etud.univ-ubs.fr  
+COUTAND Bastien - coutand.e2100676@etud.univ-ubs.fr  
+MARCHAND Robin - marchand.e2101234@etud.univ-ubs.fr  
 
 ## Réalisation
-WEB - CHAPRON Lucas  
-Programme Obfuscation/Désobfuscation - MARCHAND Robin
+WEB - CHAPRON Lucas / COUTAND Bastien  
+Programme Obfuscation/Désobfuscation - COUTAND Bastien / MARCHAND Robin
 
 ## Description du projet
 Ce projet vient du problème que tout le monde peut voir un pdf ou une image en entier une fois mis en ligne et qu'il n'y a plus de contrôle d'accès. Nous avons rendu possible l'accès de certaines informations selon les rôles afin que seul un groupe de personnes ait accès à l'information. Pour mettre cela en place, nous avons dû utiliser nos compétences en stéganographie et web. Pour utiliser cet outil nous avons mis en place une interface web mais l'outil est tout à fait utilisable en ligne de commande même si ceci est très peu intuitif et il vous faut récupérer les coordonnées des mots que vous voudriez cacher.
