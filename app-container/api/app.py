@@ -6,7 +6,7 @@ __license__             = "ENSIBS - Cyberlog4"
 __copyright__           = "Copyright 2023, S8 Project"
 __referent_professor__  = "M. Salah SADOU"
 __client__              = "M. Maykel MATTAR"
-__credits__             = ["CHAPRON Lucas", "MARCHAND Robin"]
+__credits__             = ["CHAPRON Lucas", "COUTAND Bastien", "MARCHAND Robin"]
 
 #-----------------------------------#
 #                                   #
@@ -81,6 +81,22 @@ async def obfuscation(request:Request):
     dict_words_with_roles.clear()
     list_roles.clear()
     return templates.TemplateResponse("obfuscation.html", {"request": request})
+
+
+@app.get("/help")
+async def help(request:Request):
+    """Route which allows to access the help page
+
+    Args:
+        request (Request): request
+
+    Returns:
+        templates.TemplateResponse: the help page
+    """
+    dict_words_with_roles.clear()
+    list_roles.clear()
+    return templates.TemplateResponse("help.html", {"request": request})
+
 
 @app.get("/{path:path}")
 async def redirect(request: Request, path: str):
@@ -349,8 +365,10 @@ async def download_file_obfuscation():
             os.remove(f'download/{file}')
     try:
         if len(os.listdir("upload")) == 2:
-            #remove the pdf file
-            os.remove(os.path.join(UPLOAD_DIR, os.listdir("upload")[1]))
+            if os.listdir("upload")[0][-3:] == "pdf":
+                os.remove(os.path.join(UPLOAD_DIR, os.listdir("upload")[0]))
+            else:
+                os.remove(os.path.join(UPLOAD_DIR, os.listdir("upload")[1]))
             
         list_position, dict_role2 = convertdict(dict_words_with_roles, list_roles)
         fileinputpath = os.path.join(UPLOAD_DIR, os.listdir("upload")[0])
