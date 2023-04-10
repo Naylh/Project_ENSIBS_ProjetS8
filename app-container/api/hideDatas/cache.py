@@ -6,7 +6,7 @@ __license__             = "ENSIBS - Cyberlog4"
 __copyright__           = "Copyright 2023, S8 Project"
 __referent_professor__  = "M. Salah SADOU"
 __client__              = "M. Maykel MATTAR"
-__credits__             = ["CHAPRON Lucas", "MARCHAND Robin"]
+__credits__             = ["CHAPRON Lucas", "COUTAND Bastien", "MARCHAND Robin"]
 
 #-----------------------------------#
 #                                   #
